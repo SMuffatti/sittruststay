@@ -28,7 +28,6 @@ section {
 }
 
 section:not(.hero) {
-	max-width: 2000px;
 	margin: 0 auto;
 }
 
@@ -256,7 +255,17 @@ header nav li a:hover {
 	max-height: 300px;
 	padding: 20px 20px;
 	align-items: center;
+}
 
+#hidden-about .container .bio p {
+	padding: 20px 0;
+	line-height: 1.5;
+}
+
+#hidden-about .container .bio a {
+	color: #142691;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 #hidden-about .container img {
@@ -293,6 +302,7 @@ header nav li a:hover {
 	padding: 40px;
 	flex-basis: 50%;
 	text-align: center;
+	line-height: 1.5;
 }
 
 #training .grid li h4 {
@@ -314,7 +324,7 @@ header nav li a:hover {
 	justify-content: center;
 }
 
-.owl-carousel .item h1 {
+.owl-carousel .item h2 {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
