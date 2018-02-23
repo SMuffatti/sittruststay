@@ -42,3 +42,28 @@ $(document).ready(function(){
 		$('#more-training').toggleClass('rotate');
 	})
 });
+
+//Soft scroll
+$("#about").click(function() {
+  $("html, body").animate({
+    scrollTop: $(".about").offset().top}, 'slow');
+});
+
+$("#training").click(function() {
+	$("html, body").animate({
+		scrollTop: $(".training").offset().top}, 'slow');
+});
+$(".training-btn").click(function() {
+	$("html, body").animate({
+		scrollTop: $(".training").offset().top}, 'slow');
+});
+
+$("#the-pack").click(function() {
+	$("html, body").animate({
+		scrollTop: $(".the-pack").offset().top}, 'slow');
+});
+
+$("#contact").click(function() {
+	$("html, body").animate({
+		scrollTop: $(".contact").offset().top}, 'slow');
+});

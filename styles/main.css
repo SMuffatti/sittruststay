@@ -25,10 +25,12 @@ section {
 	flex-direction: column;
 	align-items: center;
 	padding: 100px 80px;
+
 }
 
 section:not(.hero) {
 	margin: 0 auto;
+	max-width: 2000px;
 }
 
 section:not(.hero):nth-child(even){
@@ -107,8 +109,8 @@ header nav li {
 	padding-right: 10px;
 }
 
-header nav li a:hover {
-	text-color: black;
+header nav li:hover {
+	cursor: pointer;
 }
 
 #last-nav {
@@ -177,6 +179,10 @@ header nav li a:hover {
 	box-shadow: 0 4px #131445;
 }
 
+.hero button:hover {
+	cursor: pointer;
+}
+
 .hero button:active {
 	box-shadow: none;
 	top: 2px;
@@ -201,11 +207,11 @@ header nav li a:hover {
 
 /*About Styles*/
 
-#about a {
+.about a {
 	color: #000000;
 }
 
-#about .fa-paw {
+.about .fa-paw {
 	color: #142691;
 }
 
@@ -230,12 +236,12 @@ header nav li a:hover {
 	font-weight: bold;
 }
 
-#about .fa-chevron-down {
+.about .fa-chevron-down {
 	margin-bottom: -70px;
 }
 
 /*About Expandable*/
-#about #hidden-about {
+.about #hidden-about {
 	display: none;
 	padding-top: 70px;
 }
@@ -293,21 +299,29 @@ header nav li a:hover {
 
 /*Training Styles*/
 
-#training .sub-title {
+.training .sub-title {
 	font-family: 'Kaushan Script', cursive;
 	font-size: 1.2em;
 }
 
-#training .grid li {
+.training .grid li {
 	padding: 40px;
 	flex-basis: 50%;
-	text-align: center;
 	line-height: 1.5;
 }
 
-#training .grid li h4 {
+.training .grid li h4 {
+	text-align: center;
 	font-size: 2em;
 	margin: 20px 0;
+}
+
+.training .grid li p {
+	padding: 15px;
+}
+
+.training .heading {
+	font-weight: bold;
 }
 
 /* Training Expandable */
