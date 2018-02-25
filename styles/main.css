@@ -382,6 +382,22 @@ header nav li:hover {
 	flex-basis: 70%;
 }
 
+@media (max-width: 480px) {
+
+		.the-pack .grid li.large {
+			flex-basis: 100%;
+			min-width: 350px;
+		}
+
+		.the-pack .grid li.small {
+			flex-basis: 100%;
+			min-width: 350px;
+		}
+
+
+
+	}
+
 
 /* Contact Styles */
 .contact p {
